@@ -1,0 +1,6 @@
+@import "_mixins";
+
+@include my-mixin(foobar) {
+  background: #333;
+}
+

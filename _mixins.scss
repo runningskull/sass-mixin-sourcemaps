@@ -1,0 +1,7 @@
+@mixin my-mixin($cls) {
+  .#{$cls}-active {
+    color: red;
+    @content;
+  }
+}
+
