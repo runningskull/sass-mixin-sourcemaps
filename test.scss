@@ -1,6 +1,19 @@
 @import "_mixins";
 
-@include my-mixin(foobar) {
+
+@mixin local-mixin($cls) {
+  .#{$cls}-local {
+    color: green;
+    @content;
+  }
+}
+
+
+@include ext-mixin(foobar) {
   background: #333;
+}
+
+@include local-mixin(foobar) {
+  background: #ddd;
 }
 
